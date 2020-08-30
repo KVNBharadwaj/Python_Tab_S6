@@ -10,4 +10,57 @@ print(L, '  ', M, '  ', N)
 print("A list can be empty and still exist")
 P = []
 print (P)
+
+print("you can convert other data types to lists using Python's list() constructor.")
+
+# Convert a string to a list
+B = list('abc')
+print(B)
+# this will print ['a', 'b', 'c']
+
+# Convert a tuple to a list
+L = list((1, 2, 3))
+print(L)
+# this will print [1, 2, 3]
+
+print("Nested Lists")
+print("A list can contain sublists, which in tun can contain sublists themselves, and so on. This is known as nested list")
+print("You can use them to arrange data into hierarchical structures.")
+print("A nested list is created by placing a comma-seperated sequence of sublists.")
+
+L = ['a', ['bb', ['ccc', 'ddd'], 'ee', 'ff'], 'g', 'h']
+
+print("Nested list items can be accessed by indexes or by value")
+print(L[2])
+####  print(L[2][1])
+print(L[1][1][1])
+# -----------------------------------------------------------        )
+print(L[1][1][0])
+
+print("Negative List Indexing in a Nested List is permitted")
+print("Negative index count backward from the end of the list. So L[-1] refers to the last item, L[-2] is second last item and so on")
+print(L[-3])
+print(L[-3][-1])
+print(L[-3][-3][-2])
+
+print("Change Nested List Item Value")
+L[1][1] = 0
+print(L)
+
+print("To add new values to the end of the nested list use append() method")
+L[1].append('xx')
+print(L)
+
+print("When you want to insert an item at a specific position in a nested list, use insert() method.")
+L[1].insert(0,'mmm')
+print(L)
+
+print("You can merge one list into another by using extend() method.")
+L[1].extend([1,2,3])
+print(L)
+
+print("Remove items from nested list")
+
 print ("There is a lot to cover in list comprehension and lambda today")
+
+
