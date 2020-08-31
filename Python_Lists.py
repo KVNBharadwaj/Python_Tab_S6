@@ -60,7 +60,32 @@ L[1].extend([1,2,3])
 print(L)
 
 print("Remove items from nested list")
+x = L[1].pop(2)
+print (x)
+print (L)
+
+print("If you do not need the removed item use 'del' statement")
+del L[1][1]
+print(L)
+
+print("If you are not sure where the item is in the list, use remove() method o delete it by value")
+L.remove('g')
+print(L)
+
+print("You can use the built-in len() function to find how many items a list and a nested sublist has.")
+print(len(L))
+print(len(L[1]))
+
+print("Iterate through a Nested List")
+print("To iterate over the items of a nested list, use simple for loop.")
+Li = [[1,2,3], [4,5,6], [7,8,9]]
+for list in Li:
+    for number in list:
+        print(number, end=' ')
+
 
 print ("There is a lot to cover in list comprehension and lambda today")
+
+
 
 
